@@ -1,0 +1,134 @@
+/* ===== Estilos básicos para el CV con pseudo–clases ===== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* Listas */
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+/* Habilidades */
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  display: inline-block;
+  background: #eee;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+h2:hover {
+  color: red;
+  font-size: 30px;
+}
+/* Contacto */
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* ==== Pseudo–clases ==== */
+
+/* Cuando el mouse pasa por encima de un enlace */
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Cuando un enlace ya fue visitado */
+a:active {
+  color: blue;
+}
+a:visited {
+  color:aqua;
+}
+
+/* Primer elemento de cada lista en secciones */
+.section li:first-child {
+  font-weight: bold;
+  color: darkgreen;
+}
+
+/* Último elemento de cada lista */
+.section li:last-child {
+  color: darkred;
+}
+
+/* Habilidad cuando paso el mouse */
+.skills li:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
+/* Párrafo de contacto al pasar el mouse */
+.contact-info p:hover {
+  background: #f0f0f0;
+}
+
+.skills li:nth-child(2n+1){
+  background-color: red;
+}
+@media (max-width: 480px){
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 481px) and (max-width:1024px) {
+  body{
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 1025px) and (max-width:1300px) {
+  body{
+    background-color: rgb(80, 76, 68);
+  }
+} 
