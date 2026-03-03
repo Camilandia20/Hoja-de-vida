@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\camil\OneDrive\Escritorio\Uniminuto\Proweb\form.css">
+   
+    <title>Form</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1 id="titulo">Registration form</h1>
+        <button onClick="agregarParrafo()">Contar clicks</button>
+        <button onClick="cambiarColor()">Cambiar color</button>
+        <form action="/procesar" method="post">
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="10"> <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="nn" name="gender" value="nn">
+            <label for="nn">I prefer not to say</label><br><br>
+
+            <label>Interests</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="movies" name="interests" value="movies">
+            <label for="movies">Movies</label><br><br>
+            
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">--Selecciona--</option>
+                <option value="colombia">Colombia</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="35"></textarea><br><br>
+
+            <button type="submit">Submit</button>   
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+ <script src="C:\Users\camil\OneDrive\Escritorio\Uniminuto\Proweb\form.js"></script>
+</html>
